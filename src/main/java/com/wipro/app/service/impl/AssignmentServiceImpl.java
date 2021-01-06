@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import com.wipro.app.exception.RecordNotfoundException;
-import com.wipro.app.service.PhoneDirectoryService;
+import com.wipro.app.service.AssignmentService;
 import com.wipro.app.vo.PhoneDirectory;
 
 @Service
-public class PhoneDirectoryServiceImpl implements PhoneDirectoryService{
+public class AssignmentServiceImpl implements AssignmentService{
 	
-	private static Logger LOGGER = LoggerFactory.getLogger(PhoneDirectoryServiceImpl.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(AssignmentServiceImpl.class);
 
 	@Override
 	public String getPalindrome(String input) {

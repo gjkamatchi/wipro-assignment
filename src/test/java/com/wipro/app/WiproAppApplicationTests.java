@@ -1,13 +1,13 @@
-package com.wipro.app;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class WiproAppApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//package com.wipro.app;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class WiproAppApplicationTests {
+//
+//	@Test
+//	void contextLoads() {
+//	}
+//
+//}

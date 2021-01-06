@@ -8,24 +8,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wipro.app.service.impl.PhoneDirectoryServiceImpl;
+import com.wipro.app.service.impl.AssignmentServiceImpl;
 
 @RestController
 @RequestMapping("/api")
 public class AppController {
 	
 	@Autowired
-	private PhoneDirectoryServiceImpl phoneDirectoryService;
+	private AssignmentServiceImpl assignmentService;
 
 	
 	@GetMapping(path = "/palindromic/{input}")
 	public ResponseEntity<?> getPalindrome(@PathVariable(value = "input") final String input) {
-		return new ResponseEntity<>(phoneDirectoryService.getPalindrome(input), HttpStatus.OK);
+		return new ResponseEntity<>(assignmentService.getPalindrome(input), HttpStatus.OK);
 	}
 	
 	
 	@GetMapping(path = "/phonedirectory/{name}")
 	public ResponseEntity<?> getPhoneDirectoryName(@PathVariable(value = "name") final String name) {
-		return new ResponseEntity<>(phoneDirectoryService.getPhoneDirectoryName(name), HttpStatus.OK);
+		return new ResponseEntity<>(assignmentService.getPhoneDirectoryName(name), HttpStatus.OK);
 	}
 }
