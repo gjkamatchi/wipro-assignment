@@ -71,7 +71,7 @@ public class AssignmentServiceImpl implements AssignmentService{
         return suggestion;
     }
 
-    private static boolean isMatched(String query, String text) {
+    private boolean isMatched(String query, String text) {
 		for (int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
 			for (int j = 0; j < query.length(); j++) {
