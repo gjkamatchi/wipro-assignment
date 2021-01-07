@@ -6,7 +6,11 @@
 
 3.Start the spring boot tomcat server project
 
-4.Use below API end point to test
+4.Use below swagger API document url to test
+
+   http://localhost:9000/swagger-ui.html
+
+5.Use below API end point to test
 
   1. http://localhost:9000/api/palindromic/HelloWelcomeemoclewHelloolle
    
